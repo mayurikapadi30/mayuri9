@@ -1,0 +1,29 @@
+/* styles.css */
+/*body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}*/
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+p {
+    color: rgb(192, 33, 33);
+    font-size: 18px;
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 5px;
+}
+body {
+    background-image:url('https://www.marshallsindia.com//ItemImages/ZA%209183.jpg?id=75');
+    height: 100%;  /* Make the background image cover the entire screen */
+    background-repeat: no-repeat;   /* Prevent the image from repeating */
+    height: 100vh;
+    background-size:cover;  
+
+
+}
