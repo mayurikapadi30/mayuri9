@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Overflow Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 100vh;
+      background-color: #1ed6ff;
+    
+    }
+
+    .container {
+      width: 300px;
+      height: 150px;
+      margin: 20px 0;
+      padding: 10px;
+      border: 2px solid rgb(0, 0, 0);
+      background-color: hsl(313, 92%, 75%);
+    }
+
+    .content {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* Example 1: Overflow Visible */
+    .overflow-visible {
+      overflow: visible;
+    }
+
+    /* Example 2: Overflow Hidden */
+    .overflow-hidden {
+      overflow: hidden;
+    }
+
+    /* Example 3: Overflow Scroll */
+    .overflow-scroll {
+      overflow: scroll;
+    }
+
+    /* Example 4: Overflow Auto */
+    .overflow-auto {
+      overflow: auto;
+    }
+
+    .example-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container overflow-visible">
+    <div class="example-title">Overflow: Visible</div>
+    <div class="content">
+      This content is overflowing the container, but it is visible outside the container boundaries. 
+      The text will spill out of the box.
+    </div>
+  </div>
+
+  <div class="container overflow-hidden">
+    <div class="example-title">Overflow: Hidden</div>
+    <div class="content">
+      This content is overflowing, but it will be clipped and hidden. You cannot see anything outside the box.
+    </div>
+  </div>
+
+  <div class="container overflow-scroll">
+    <div class="example-title">Overflow: Scroll</div>
+    <div class="content">
+      This content will always show scrollbars, even if the content does not overflow. Scrollbars are visible regardless of the content size.
+      <br><br> 
+      Add more content here to see the scrollbar in action. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+    </div>
+  </div>
+
+  <div class="container overflow-auto">
+    <div class="example-title">Overflow: Auto</div>
+    <div class="content">
+      This content will show a scrollbar only if the content overflows. If you add more content, you will be able to scroll. 
+      <br><br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+    </div>
+  </div>
+
+</body>
+</html>
